@@ -76,9 +76,9 @@ myfile.read() -> return String \
 myfile.seek(0) -> to do myfile.read() again \
 myfile.readlines() -> return List with '\n' in the end
 
-**while ... else ...**
-**break**: break out of the current closest enclosing loop
-**continue**: go to the top of the closest enclosing loop
+**while ... else ...** \
+**break**: break out of the current closest enclosing loop \
+**continue**: go to the top of the closest enclosing loop \
 **pass**: do nothing at all
 
 ### Operators
@@ -97,6 +97,28 @@ myfile.readlines() -> return List with '\n' in the end
 * e.g. def myfunc(*arg) -> takes in an arbitrary number of argument as tuple
 * e.g. def myfunc(**kwargs) -> accept arguments(as many as wanted) as dictionary
 
+### map/filter/lambda expression
+* map(myfunc, list) returns myfunc(x) for x in list
+* filter(myfunc, list) only returns myfunc(x) for x in list if condition is true
+* map(lambda x: x/2, list) returns x/2 for x in list
 
+### LEGB rule
+* L - local -> name assigned in any way within a function, and not declared global in that function
+* E - Enclosing function locals -> names in the local scope of any and all enclosing functions, from inner to outer
+* G - Global(module) -> names assigned at the top-level of a module file, or declared global in a def within the file
+* B - Built-in(Python) -> names preassigned in the built-in names module: open, range, SyntaxError
+```Python
+# Globla
+def function1():
+    # Enclosing
+    def function2 ():
+        # Local
+        # reassign global variable (better avoid using it)
+        global x
+```
 
-
+### Special (Magic/Dunder) methods
+* __init__
+* __str__
+* __len__
+* __del__
