@@ -91,6 +91,7 @@ myfile.readlines() -> return List with '\n' in the end
 * from random import shuffle -> shuffle(list) not returns anything
 * from random import randint -> randint(begin, stop) returns a random num in the range
 * result = input('input: ') returns any input as String
+* string.capitalize() / string.title()
 
 ### function
 * e.g. def myfunc(value='default') -> set defualt value
@@ -122,3 +123,35 @@ def function1():
 * __str__
 * __len__
 * __del__
+
+### Module and Package
+* __init__.py
+* if __name__ ==  "__main__"
+
+### Test tools
+* pylint
+* unittest
+
+### Decorators
+```Python
+def decorator_func(original_func):
+        def wrap_func():
+                # some extra code
+                original_func()
+                # some extra code
+        return wrap_func
+
+new_func = decorator_func(some_func)
+```
+
+``` Python
+@new_decorator
+def some_func():
+        pass
+```
+
+### Python Web page Framework
+* Flask
+* Django
+
+
