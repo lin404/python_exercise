@@ -151,7 +151,7 @@ def some_func():
         pass
 ```
 
-### Python Web page Framework 
+### Python Web page Framework
 * [decorators](http://flask.pocoo.org/docs/0.12/patterns/viewdecorators/)
 * [Flask](http://flask.pocoo.org/)
 * [Django](https://www.djangoproject.com/)
@@ -269,3 +269,21 @@ You can use special escape codes to find specific types of patterns in your data
 * https://wiki.python.org/moin/GuiProgramming
 
 * [PyGame](https://www.pygame.org/hifi.html) -> graphical game
+
+### Interview Info
+> [reference](https://www.javatpoint.com/python-interview-questions)
+* Django, Flask
+* SciPy, NumPy
+* Extensible, Object-oriented
+* PEP8
+* the difference between del and remove()
+* zip(), swapcase(), strip(), lstrip(), join(), shuffle()
+* interpreted, machine language, no need compilation
+* memory management
+* namespace
+* iterators -> next()
+* generator -> yield
+
+### Tree
+* lookup, insert, delete -> O(logn)
+* Depth-First Search (DFS)
