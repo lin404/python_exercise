@@ -284,6 +284,9 @@ You can use special escape codes to find specific types of patterns in your data
 * iterators -> next()
 * generator -> yield
 
+### Ternary Operators
+> e.g y = 'Yes' if 1>2 else 'No'
+
 ### Tree
 * lookup, insert, delete -> O(logn)
 * Depth-First Search (DFS)
