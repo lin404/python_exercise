@@ -10,8 +10,8 @@ class Solution:
 
         # [],[1]
         while lo <= hi:
-            xpartition = int((lo + hi + 1)/2)
-            ypartition = int((x + y + 1)/2) - xpartition
+            xpartition = (lo + hi + 1)//2
+            ypartition = (x + y + 1)//2 - xpartition
 
             print(f'xpartition={xpartition}, y={ypartition}')
 
@@ -27,9 +27,9 @@ class Solution:
             # [1],[1]
             if xleft <= yright and yleft <= xright:
                 if (x+y) % 2 == 0:
-                    return float((max(xleft, yleft)+min(xright, yright))/2)
+                    return (max(xleft, yleft)+min(xright, yright))/2
                 else:
-                    return float(max(xleft, yleft))
+                    return max(xleft, yleft)
 
             if xleft > yright:
                 hi = xpartition - 1
