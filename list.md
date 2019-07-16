@@ -1,5 +1,8 @@
+### 001
+Binary Tree
+
 ### 002
-Latest recently use (LRU)
+Latest recently use (LRU) ???
 
 ### 003
 Median of Two Sorted Arrays
@@ -46,4 +49,31 @@ Trapping Rain Water
 
 ### 015
 Product of Array Except Self
-> range(n-1, -1, -1) -> reversed(range(n)):
+> range(n-1, -1, -1) -> reversed(range(n))
+
+### 016
+Remove Linked List Elements
+
+### 017
+Flatten Binary Tree to Linked List
+
+### 018
+Remove Nth Node From End of Linked List
+
+### 019
+Reverse Linked List
+
+### 020
+Invert(Reverse) Binary Tree
+
+### 021
+Merge Two Sorted Lists
+
+### 022
+Maximum Product of Three Numbers
+> try O(N)
+
+### 023
+Top K Frequent Words
+> collections.Counter(); heapq.heapify()/heapq.heappop()
+> sort with multiple keys
