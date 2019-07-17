@@ -55,7 +55,7 @@ Product of Array Except Self
 Remove Linked List Elements
 
 ### 017
-Flatten Binary Tree to Linked List
+Flatten Binary Tree to Linked List ???
 
 ### 018
 Remove Nth Node From End of Linked List
@@ -77,3 +77,28 @@ Maximum Product of Three Numbers
 Top K Frequent Words
 > collections.Counter(); heapq.heapify()/heapq.heappop()
 > sort with multiple keys
+
+### 024
+Flower Planting With No Adjacent
+
+### 025
+Letter Tile Possibilities
+> itertools.permutations()
+
+### 026
+License Key Formatting
+
+### 027
+Balanced Binary Tree
+
+### 028
+Unique Binary Search Trees
+
+### 029
+Serialize and Deserialize Binary Tree
+
+### 030
+Merge intervals
+
+### 031
+Minimum Window Substring
