@@ -15,18 +15,19 @@ class Solution:
         if not root:
             return
 
-        self.flatten(root.left)
-        self.flatten(root.right)
-
-        p = root
-        if not root.left:
-            return
-        p = p.left
-        while p.right:
-            p = p.right
-        p.right = root.right
-        root.right = root.left
+        right = root.right
+        left = root.left
         root.left = None
+
+        self.flatten(left)
+        self.flatten(right)
+
+        root.right = left
+
+        while root.right:
+            root = root.right
+
+        root.right = right
 
 # [1,2,5,3,4,null,6]
 # [1,null,2,null,3,null,4,null,5,null,6]
