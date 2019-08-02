@@ -27,7 +27,7 @@ Slice [Start:Stop:Size]
 * Immutability
 * letter*num
 * upper(), lower(), split(), capitalize()
-* join(list) -> '--'.join([1,2,3]) == '1--2--3'
+* join(list) -> '--'.join(str(i) for i in [1,2,3]) == '1--2--3'
 
 .format()
 * float: {value:width.precision f}

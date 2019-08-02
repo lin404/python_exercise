@@ -2,7 +2,7 @@
 Binary Tree
 
 ### 002
-Latest recently use (LRU) ???
+Latest recently use (LRU) // TODO
 
 ### 003
 Median of Two Sorted Arrays
@@ -30,7 +30,7 @@ K Closest Points to Origin
 > sort(), sorted(), lambda
 
 ### 010
-Best Time to Buy and Sell Stock III ??
+Best Time to Buy and Sell Stock III // TODO
 
 ### 011
 Longest Palindromic Substring
@@ -55,7 +55,7 @@ Product of Array Except Self
 Remove Linked List Elements
 
 ### 017
-Flatten Binary Tree to Linked List ???
+Flatten Binary Tree to Linked List // TODO
 
 ### 018
 Remove Nth Node From End of Linked List
@@ -90,6 +90,7 @@ License Key Formatting
 
 ### 027
 Balanced Binary Tree
+> check depth for each node
 
 ### 028
 Unique Binary Search Trees
@@ -102,3 +103,24 @@ Merge intervals
 
 ### 031
 Minimum Window Substring
+
+### 032
+Fruit Into Baskets // TODO
+
+### 033
+Next Closest Time // TODO
+
+### 034
+K Empty Slots // TODO
+
+### 035
+Longest Absolute File Path // TODO
+
+### 036
+Course Schedule II // TODO
+
+### 037
+3Sum // TODO
+
+### 038
+Meeting Rooms II // TODO
