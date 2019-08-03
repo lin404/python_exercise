@@ -1,44 +1,35 @@
+import collections
+
 
 class Solution:
     def calcEquation(self, equations, values, queries):
 
-        var_map = {}
+        def divide(x, y, visited):
+            if x == y:
+                return 1.0
+            visited.add(x)
+            for n in g[x]:
+                if n in visited:
+                    continue
+                visited.add(n)
+                d = divide(n, y, visited)
+                if d > 0:
+                    return d * g[x][n]
+            return -1.0
 
-        for idx, strs in enumerate(equations):
+        g = collections.defaultdict(dict)
+        for (x, y), v in zip(equations, values):
+            g[x][y] = v
+            g[y][x] = 1.0 / v
 
-            if strs[0] not in var_map:
-                var_map[strs[0]] = {}
-
-            if strs[1] not in var_map:
-                var_map[strs[1]] = {}
-
-            var_map[strs[0]][strs[1]] = values[idx]
-            var_map[strs[1]][strs[0]] = 1/values[idx]
-
-        lst = []
-
-        for var in queries:
-            if var[0] not in var_map or var[1] not in var_map:
-                lst.append(float(-1))
-
-            elif var[0] == var[1] and var[0] in var_map:
-                lst.append(float(1))
-
-            else:
-                if var[1] in var_map[var[0]]:
-                    lst.append(float(var_map[var[0]][var[1]]))
-                elif var[0] in var_map[var[1]]:
-                    lst.append(float(var_map[var[0]][var[1]]))
-                else:
-                    for key, value in var_map[var[0]].items():
-                        if key in var_map[var[1]]:
-                            lst.append(float(value/var_map[var[1]][key]))
-        return lst
+        ans = [divide(x, y, set()) if x in g and y in g else -
+               1 for x, y in queries]
+        return ans
 
 
-equations = [["a", "b"]]
-values = [0.5]
-queries = [["a", "b"], ["b", "a"], ["a", "c"], ["x", "y"]]
+equations = [["a", "b"], ["b", "c"]]
+values = [2.0, 3.0]
+queries = [["a", "c"], ["b", "a"], ["a", "e"], ["a", "a"], ["x", "x"]]
 
 sol = Solution()
 rst = sol.calcEquation(equations, values, queries)
