@@ -108,7 +108,7 @@ Minimum Window Substring
 Fruit Into Baskets // TODO
 
 ### 033
-Next Closest Time // TODO
+Evaluate Division
 
 ### 034
 K Empty Slots // TODO
@@ -124,3 +124,28 @@ Course Schedule II // TODO
 
 ### 038
 Meeting Rooms II // TODO
+
+### 039
+Next Closest Time // TODO
+
+### 040
+Find the Town Judge
+
+### 041
+Longest Substring Without Repeating Characters
+
+### 042
+Meeting Rooms II
+> Heap Data Structure
+
+### 043
+Top K Frequent Elements
+> Heap Data Structure
+
+heapq.nlargest:
+key=str.lower Equivalent to: sorted(iterable, key=key, reverse=True)[:n]
+
+heapq.nsmallest:
+key=str.lower Equivalent to: sorted(iterable, key=key)[:n]
+
+sorted(dict.keys(), key=lambda k: dict[k])  -->  sorted(dict.keys(), key=dict.get)
