@@ -149,3 +149,38 @@ heapq.nsmallest:
 key=str.lower Equivalent to: sorted(iterable, key=key)[:n]
 
 sorted(dict.keys(), key=lambda k: dict[k])  -->  sorted(dict.keys(), key=dict.get)
+
+### 044
+Alien Dictionary
+> BFS, DFS
+
+### 045
+Bubble sort
+
+### 046
+Symmetric Tree
+> DFS
+
+### 047
+Minimum Depth of Binary Tree
+> DFS
+
+### 048
+Path Sum
+> DFS
+
+### 049
+Nested List Weight Sum
+> DFS
+
+### 050
+Binary Tree Level Order Traversal II
+> DFS, BFS
+
+### 051
+Maximum Depth of N-ary Tree
+> DFS, BFS
+
+### 052
+N-ary Tree Level Order Traversal
+> BFS
