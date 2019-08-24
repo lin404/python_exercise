@@ -10,10 +10,8 @@ class Solution:
             return
         if left > 0:
             self.dfs(res, left - 1, right, path + '(')
-            print(f'left={path}')
         if left < right:
             self.dfs(res, left, right - 1, path + ')')
-            print(f'right={path}')
 
 
 n = 3
