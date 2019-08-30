@@ -184,3 +184,43 @@ Maximum Depth of N-ary Tree
 ### 052
 N-ary Tree Level Order Traversal
 > BFS
+
+### 053
+Increasing Order Search Tree  //TODO
+> DFS
+
+### 054
+Leaf-Similar Trees
+> DFS
+
+### 055
+Binary Tree Paths
+> DFS
+
+### 056
+Distribute Coins in Binary Tree //TODO
+> DFS
+
+### 057
+Find Leaves of Binary Tree
+> DFS
+
+### 059
+Construct Binary Tree from Preorder and Inorder Traversal //TODO
+> DFS
+
+### 060
+Search in Rotated Sorted Array
+> Binary search O(log(N))
+
+### 061
+Merge Sorted Array
+> inplace list --> list[:]
+
+### 062
+Generate Parentheses
+> DFS
+
+### 064
+Group Anagrams
+> Sort String --> newString = ''.join(sorted(oldString))
